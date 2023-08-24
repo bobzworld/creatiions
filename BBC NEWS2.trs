@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-14.dtd">
+<Trans scribe="sdutt" audio_filename="English_Irish-BBC_Newsline_Late_News.2018-09-13.original" version="7" version_date="190628">
+<Topics>
+<Topic id="to1" desc="`"/>
+</Topics>
+<Speakers>
+<Speaker id="spk1" name="Newsreader" check="yes" dialect="native" accent="" scope="local"/>
+<Speaker id="spk2" name="Máiría Cahill" check="no" type="female" dialect="native" accent="" scope="local"/>
+<Speaker id="spk3" name="Vincent Kearney" check="no" dialect="native" accent="" scope="local"/>
+<Speaker id="spk4" name="speaker#4" check="no" dialect="native" accent="" scope="local"/>
+</Speakers>
+<Episode>
+<Section type="report" startTime="0" endTime="589.589">
+<Turn startTime="0" endTime="12.768" speaker="spk1">
+<Sync time="0"/>
+[sta]
+<Sync time="3.013"/>
+Hello and welcome to BBC newsline.
+<Sync time="6.719"/>
+Máiría Cahill has rejected an apology from Sinn Féin
+<Sync time="10.067"/>
+over how the party dealt with her allegation of rape
+</Turn>
+<Turn speaker="spk1" startTime="12.768" endTime="29.200">
+<Sync time="12.768"/>
+by a Sinn Féin and IRA memeber.
+<Sync time="14.799"/>
+But she has accepted an apology from the cheif constable
+<Sync time="17.768"/>
+after a Police Ombudsaman report said,"the police failed her and two other women."
+<Sync time="22.299"/>
+He said,"they were sexually abused by the man, when they were teenagers."
+<Sync time="26.004"/>
+Our home affairs correspondent Vincent Kearney reports,
+</Turn>
+<Turn startTime="29.200" endTime="56.162" speaker="spk3">
+<Sync time="29.200"/>
+"Máiría Cahill has accused the IRA and Sinn Féin of covering up child abuse.
+<Sync time="34.691"/>
+She has also accused the police of failing to properly investigate
+<Sync time="39.0"/>
+her claims that she was raped by senior member of the IRA.
+<Sync time="42.939"/>
+The Police Ombudsman has agreed. 
+<Sync time="46.419"/>
+Labelling the PSN investigation as disjointed and inconsitent
+<Sync time="50.39"/>
+He says that,"they failed Máiría Cahill and two others alleged victims
+<Sync time="53.784"/>
+in a number of key areas."
+</Turn>
+<Turn speaker="spk2" startTime="56.162" endTime="64.702">
+<Sync time="56.162"/>
+"I had a difficulty with confidence in the cirminal justice system
+<Sync time="59.137"/>
+as a whole and in relation with how they handled my case. 
+<Sync time="61.787"/>
+But to say it in black and white is actually very stark. 
+</Turn>
+<Turn startTime="64.702" endTime="71.689">
+<Sync time="64.702"/>
+And I am very upset and I hope the lessons were learnt. 
+<Sync time="68.341"/>
+So that no one ever has to go through this experience again."
+</Turn>
+<Turn speaker="spk3" startTime="71.689" endTime="82.281">
+<Sync time="71.689"/>
+Dr. Michael Macaw also revealed that the REC had information
+<Sync time="74.191"/>
+about alleged child abuse by IRA member ten years before the complaints
+<Sync time="78.99"/>
+were made, but failed to act.
+</Turn>
+<Turn speaker="spk2" startTime="82.281" endTime="96.815">
+<Sync time="82.281"/>
+"It is quite upsetting, because at that time I was being put through
+<Sync time="86.076"/>
+an IRA investigation and through my sexual abuse.
+<Sync time="89.647"/>
+I think that someone in the criminal justice system could have stopped that
+<Sync time="92.750"/>
+It's absolutely horrendous. And I think the chief constable has serious quesstions to answer."
+</Turn>
+<Turn speaker="spk3" startTime="96.815" endTime="117.029">
+<Sync time="96.815"/>
+In a statement the cheif constable said,"he accepts the reports findings in full."
+<Sync time="100.690"/>
+George Hamilton says,"he apologies unequivocablly for the hurt and distress caused
+<Sync time="107.162"/>
+to the three women and for the failures in the police investigation."
+<Sync time="111.226"/>
+The cheif constable and other senior officers today met
+<Sync time="114.485"/>
+Máiría Cahill to discuss the report."
+</Turn>
+<Turn speaker="spk2" startTime="117.029" endTime="126.346">
+<Sync time="117.029"/>
+"Part of taking the responsiblity means that you tell the truth. 
+<Sync time="120.132"/>
+And I am satisfied today that George Hamilton has told the truth
+<Sync time="122.638"/>
+in relation to his organization."
+</Turn>
+<Turn speaker="spk3" startTime="126.346" endTime="159.044">
+<Sync time="126.346"/>
+Máiría Cahill has also accused Sinn Féin of engaging in a cover up.
+<Sync time="129.627"/>
+She said,"she briefed senior party members
+<Sync time="131.394"/>
+including Gerry Adams about her ordeal, before going to the police. 
+<Sync time="135.913"/>
+But they failed to help her."
+<Sync time="138.011"/>
+In a statement today party president Mary Lou MacDonald said,
+<Sync time="141.850"/>
+"Illinois has robust procedures in place for mandatory reporting of abuse."
+<Sync time="146.404"/>
+She said,"She unreservedly apologies
+<Sync time="149.334"/>
+that they were not in place at the time of Máiría Cahill disclosure."
+<Sync time="152.877"/>
+But Máiría Cahill dismissed that statement as cowardly
+<Sync time="156.828"/>
+and woefully inadequate.
+</Turn>
+<Turn speaker="spk2" startTime="159.044" endTime="174.360">
+<Sync time="159.044"/>
+"Sinn Féin effectively kicked me off and on the contary
+<Sync time="161.659"/>
+and called me a liar on this.
+<Sync time="163.847"/>
+And I think, what Mary Lou MacDonald, 
+<Sync time="165.562"/>
+at the very least-- what Mary Lou MacDonald should do
+<Sync time="167.906"/>
+is use the line- "Maria Cahill was telling the truth
+<Sync time="170.740"/>
+and I am sorry, she has failed to do that.""
+</Turn>
+<Turn speaker="spk3" startTime="174.360" endTime="589.589">
+<Sync time="174.360"/>
+Sinn Féin has not yet commented on her response.
+<Sync time="177.984"/>
+Vincent Kaerney. BBC newsline.
+</Turn>
+</Section>
+</Episode>
+</Trans>
