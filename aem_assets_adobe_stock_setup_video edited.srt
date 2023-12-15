@@ -1,0 +1,716 @@
+﻿1
+00:00:01,101 --> 00:00:02,551
+Hey everyone! 
+Iin this video we're
+
+2
+00:00:02,851 --> 00:00:04,547
+going to set up
+a Adobe Stock and
+
+3
+00:00:04,601 --> 00:00:06,366
+Adobe Experience
+Manager Assets integration.
+
+4
+00:00:06,452 --> 00:00:08,915
+Introducing AM 6.4.2.
+
+5
+00:00:09,055 --> 00:00:11,392
+Note that this integration
+
+6
+00:00:11,525 --> 00:00:14,788
+requires an Enterprise
+Adobe Stock file
+
+7
+00:00:14,811 --> 00:00:18,137
+ AM 6.4 with service pack
+2 installed.
+
+8
+00:00:18,232 --> 00:00:20,284
+To perform some of
+these operations
+
+9
+00:00:20,403 --> 00:00:22,166
+You might need a Adobe
+admin permissions on
+
+10
+00:00:22,453 --> 00:00:27,339
+on AEM Adobe IO console. And
+access to your admin console.
+
+11
+00:00:27,360 --> 00:00:29,922
+I'm using AMC 6.4 GA
+version.
+
+12
+00:00:30,145 --> 00:00:31,627
+Let's get started.
+
+13
+00:00:31,629 --> 00:00:32,970
+From your main
+home homepage .
+
+14
+00:00:33,160 --> 00:00:36,158
+Click on Tools >Deployment
+and Select Packages.
+
+15
+00:00:36,158 --> 00:00:37,866
+Let's upload and install
+
+16
+00:00:37,909 --> 00:00:39,851
+the AEM 6.
+service pack .
+
+17
+00:00:39,851 --> 00:00:41,966
+You can find the
+downloadable link for
+
+18
+00:00:42,173 --> 00:00:44,388
+the service pack along
+with this video.
+
+19
+00:00:44,659 --> 00:00:47,850
+Browse to find the service
+pack and install it.
+
+20
+00:00:47,864 --> 00:00:49,852
+Note that it might
+take a few seconds
+
+21
+00:00:49,864 --> 00:00:52,503
+for the installation
+to complete . As
+
+22
+00:00:52,599 --> 00:00:54,571
+an additional step
+you're required to
+
+23
+00:00:54,571 --> 00:00:58,750
+reinstall the
+ Adobe Stock Package .
+
+24
+00:00:58,776 --> 00:00:59,787
+At this point
+
+25
+00:01:00,033 --> 00:01:03,121
+we have taken care of all the
+prerequisites for this integration .
+
+26
+00:01:03,253 --> 00:01:06,092
+Let's navigate back to AEM
+
+27
+00:01:06,117 --> 00:01:08,124
+homepage and click
+Tools> Security
+
+28
+00:01:08,224 --> 00:01:11,254
+and select Adobe IMS
+configuration.
+
+29
+00:01:11,509 --> 00:01:14,053
+Nearly all Adobe services
+require your
+
+30
+00:01:14,238 --> 00:01:15,830
+ application
+to authenticate through
+
+31
+00:01:15,959 --> 00:01:20,425
+the Adobe Identity Management
+System to receive Client credentials.
+
+32
+00:01:20,680 --> 00:01:22,386
+The client credentials determine
+
+33
+00:01:22,457 --> 00:01:23,678
+the access and permissions
+
+34
+00:01:24,071 --> 00:01:27,603
+granted to your application .
+Any API that accesses a
+
+35
+00:01:27,871 --> 00:01:30,991
+a service or content on
+behalf of an end user
+
+36
+00:01:31,121 --> 00:01:33,706
+authenticates using O oath
+
+37
+00:01:33,821 --> 00:01:36,431
+and J Sand
+Webtop and standards.
+
+38
+00:01:36,622 --> 00:01:40,989
+ Let's create a new
+ Adobe IMS configuration
+
+39
+00:01:41,171 --> 00:01:43,793
+For cloud solutions
+ Let's Select Adobe Stock
+
+40
+00:01:43,991 --> 00:01:45,947
+and then create a new certificate .
+
+41
+00:01:46,006 --> 00:01:50,343
+Provide a name for your certificate
+and then click Create.
+
+42
+00:01:50,433 --> 00:01:52,582
+To retrieve the access token -we
+
+43
+00:01:52,617 --> 00:01:54,080
+should add the certificates
+
+44
+00:01:54,167 --> 00:01:57,601
+public key to the
+technical account on Adobe IO.
+
+45
+00:01:57,624 --> 00:02:00,909
+We will be covering
+this in our next step .
+
+46
+00:02:01,475 --> 00:02:05,214
+Click Ok and download the
+public key to your drive .
+
+47
+00:02:05,230 --> 00:02:08,551
+Open a new tab and navigate
+to Adobe IO console
+
+48
+00:02:08,845 --> 00:02:11,860
+Make sure to select your
+organization and you should
+
+49
+00:02:11,886 --> 00:02:16,818
+be able to see a list of
+existing integrations .
+
+50
+00:02:17,018 --> 00:02:19,342
+Let's create a new integration
+to access Adobe Stock API
+
+51
+00:02:19,361 --> 00:02:23,125
+and click continue. Under
+Creative Cloud Solutions
+
+52
+00:02:23,361 --> 00:02:26,111
+you should be able to see
+Adobe Stock Service Account
+
+53
+00:02:26,111 --> 00:02:31,130
+integration -if the entitlement
+is added to your organization
+
+54
+00:02:31,185 --> 00:02:33,818
+If the application makes
+API requisits to a service
+
+55
+00:02:33,891 --> 00:02:37,890
+on behalf of itself or an
+enterprise organization
+
+56
+00:02:37,890 --> 00:02:42,391
+you will need to configure
+a service account integration
+
+57
+00:02:42,391 --> 00:02:44,892
+Service accounts are
+similar to user accounts but,
+
+58
+00:02:44,892 --> 00:02:49,142
+they are unique to your application
+and have additional security requirements.
+
+59
+00:02:49,142 --> 00:02:52,892
+You can also check out the
+ documentation for
+
+60
+00:02:52,892 --> 00:02:54,963
+Adobe Stock API
+here.
+
+61
+00:02:58,733 --> 00:03:00,936
+Select the service account
+integration option
+
+62
+00:03:00,936 --> 00:03:02,386
+and then click Continue .
+
+63
+00:03:02,386 --> 00:03:05,495
+Provide a name and description
+for your integration.
+
+64
+00:03:05,520 --> 00:03:08,127
+For public keys 
+certificate-
+
+65
+00:03:08,127 --> 00:03:11,314
+ let's browse and
+upload the public key we saved
+
+66
+00:03:11,314 --> 00:03:16,619
+ to our drive from AEM.  For
+Adobe Stock configuation
+
+67
+00:03:16,619 --> 00:03:20,369
+you can either use the default
+Adobe Stock configuaration
+
+68
+00:03:20,369 --> 00:03:24,561
+or create a new configuration
+within Adobe admin console.
+
+69
+00:03:24,561 --> 00:03:27,810
+And it should show up under
+the license dropdown
+
+70
+00:03:27,840 --> 00:03:29,712
+For this particular account
+
+71
+00:03:29,840 --> 00:03:32,590
+we have two additional
+profiles created.
+
+72
+00:03:32,590 --> 00:03:35,590
+Let's open our admin
+console in a new tab
+
+73
+00:03:35,590 --> 00:03:37,237
+and under Products and
+Adobe Stock
+
+74
+00:03:37,237 --> 00:03:40,737
+you should be
+able to view the user admins
+
+75
+00:03:40,737 --> 00:03:42,755
+and permissions
+for your Adobe Stock profile
+
+76
+00:03:43,502 --> 00:03:48,252
+Under Permissions you have an
+option to add references that
+
+77
+00:03:48,252 --> 00:03:52,252
+need to be provided everytime
+you try to license an asset.
+
+78
+00:03:52,252 --> 00:03:56,002
+These references can be
+optional or mandatory.
+
+79
+00:03:56,105 --> 00:03:57,274
+Let's open the mandatory
+
+80
+00:03:57,274 --> 00:03:58,575
+references and you can notice
+
+81
+00:03:58,575 --> 00:04:01,975
+that project name and cross
+sender references are added as mandatory.
+
+82
+00:04:02,175 --> 00:04:05,340
+Let's also check out
+optional references
+
+83
+00:04:05,340 --> 00:04:08,840
+used for this configuration.
+We have kept the
+
+84
+00:04:08,840 --> 00:04:11,076
+country reference as optional .
+
+85
+00:04:11,101 --> 00:04:12,591
+Let's navigate back
+
+86
+00:04:12,591 --> 00:04:14,545
+to our integration window
+
+87
+00:04:14,570 --> 00:04:16,757
+and select the Adobe Stock
+
+88
+00:04:17,017 --> 00:04:19,292
+configuration and 
+create integration
+
+89
+00:04:19,317 --> 00:04:21,593
+ Upon successful integration
+
+90
+00:04:21,694 --> 00:04:23,893
+you can click to view the
+integration details
+
+91
+00:04:24,019 --> 00:04:27,926
+From the JWTT tab copy the
+ payload details.
+
+92
+00:04:28,119 --> 00:04:30,105
+Switch
+back to an Adobe IMS window.
+
+93
+00:04:30,105 --> 00:04:34,546
+And then click next.
+Paste the JWT payload
+
+94
+00:04:34,546 --> 00:04:38,295
+ in the payload field. 
+Select and copy the
+
+95
+00:04:38,295 --> 00:04:42,046
+IMS authorization server URL
+from the payload
+
+96
+00:04:42,046 --> 00:04:45,913
+Provide a title for your IMS
+
+97
+00:04:45,938 --> 00:04:48,693
+technical account
+configuration then
+
+98
+00:04:48,693 --> 00:04:54,443
+paste the authorization server URL.
+ Switch back to the Adobe IO console
+
+99
+00:04:54,443 --> 00:04:57,434
+and copy the client secret
+and API key details
+
+100
+00:04:57,694 --> 00:04:59,620
+and paste the values into the
+
+101
+00:04:59,620 --> 00:05:03,370
+corresponding fields in your
+IMS configuration window.
+
+102
+00:05:03,370 --> 00:05:07,370
+Click Create to complete
+the configuration.
+
+103
+00:05:07,370 --> 00:05:10,797
+Select the configuration and
+perform the health check
+
+104
+00:05:11,531 --> 00:05:13,198
+to make sure you receive the top
+
+105
+00:05:13,498 --> 00:05:15,533
+configuration for
+your IMS integration .
+
+106
+00:05:15,833 --> 00:05:17,538
+Now, we need to set up
+cloud services for
+
+107
+00:05:17,738 --> 00:05:21,489
+Adobe Stock AEM integration.
+From your AEM home page
+
+108
+00:05:21,489 --> 00:05:24,679
+Click on Tools> Cloud
+Services and then click
+
+109
+00:05:24,679 --> 00:05:28,468
+on Adobe Stock. Click
+on the create option to
+
+110
+00:05:29,223 --> 00:05:30,473
+create a new stock
+configuration
+
+111
+00:05:30,871 --> 00:05:32,121
+Provide a title
+
+112
+00:05:32,121 --> 00:05:33,784
+and select the adobe IMS
+
+113
+00:05:34,121 --> 00:05:36,370
+configuration we created in
+
+114
+00:05:36,370 --> 00:05:38,820
+the previous step . Make sure
+
+115
+00:05:38,845 --> 00:05:40,606
+to select the
+environment as production
+
+116
+00:05:40,906 --> 00:05:43,106
+Stage environment option
+won't be removed in
+
+117
+00:05:43,106 --> 00:05:46,994
+the next AEM release update and
+it is recommended by Adobe
+
+118
+00:05:46,994 --> 00:05:50,700
+to use a production environment
+For licensed asset path field
+
+119
+00:05:50,700 --> 00:05:54,215
+you can select the
+/ content/ dam path
+
+120
+00:05:55,965 --> 00:05:57,965
+This field is part
+of an upcoming release
+
+121
+00:05:57,965 --> 00:06:02,465
+and for 6.4.2
+it is not relevant .
+
+122
+00:06:02,465 --> 00:06:05,216
+Select the locale as English
+and save and close your cloud
+
+123
+00:06:05,216 --> 00:06:09,833
+configuration. At this point
+we have successfully integrated
+
+124
+00:06:09,833 --> 00:06:13,083
+Adobe Stock with AEM assets.
+ Admin can
+
+125
+00:06:13,083 --> 00:06:16,184
+assign this cloud
+configuration to certain users
+
+126
+00:06:16,184 --> 00:06:20,583
+or a group. Open to view the
+properties of the stock
+
+127
+00:06:20,583 --> 00:06:23,834
+cloud configuration and
+under user or group
+
+128
+00:06:23,834 --> 00:06:27,833
+let's add admins and dam users .
+This means
+
+129
+00:06:27,936 --> 00:06:31,186
+users belonging to the
+following group would be able
+
+130
+00:06:31,186 --> 00:06:34,905
+to license an asset from
+our Adobe Stock and save it
+
+131
+00:06:34,905 --> 00:06:37,906
+to AME assets. Save youf
+changes and exit the window .
+
+132
+00:06:37,906 --> 00:06:42,434
+  Let's make sure that our integration
+is successful by licensing
+
+133
+00:06:42,584 --> 00:06:47,207
+an asset from our Adobe
+stock within AEM assets UI.
+
+134
+00:06:47,367 --> 00:06:49,069
+From you AME home page
+click on Assets
+
+135
+00:06:49,069 --> 00:06:52,818
+and you can now see an
+option to search Adobe stock
+
+136
+00:06:52,818 --> 00:06:54,819
+For a user who doesn't
+belong to the group-
+
+137
+00:06:54,819 --> 00:06:57,069
+Probably shouldn't
+use the Adobe stock
+
+138
+00:06:57,069 --> 00:06:59,633
+cloud service. The
+option would be hidden.
+
+139
+00:06:59,633 --> 00:07:04,437
+Click on search Adobe Stock 
+option and search for stock
+
+140
+00:07:04,437 --> 00:07:07,891
+images with the key word
+Christmas. Select an asset
+
+141
+00:07:07,891 --> 00:07:12,143
+and click on license and
+try to save it . You should now
+
+142
+00:07:12,143 --> 00:07:14,642
+be able to see a window with
+the mandatory references
+
+143
+00:07:15,378 --> 00:07:17,718
+and optional references 
+we added
+
+144
+00:07:17,819 --> 00:07:19,304
+ to our stock
+configuration.
+
+145
+00:07:19,304 --> 00:07:21,290
+Provide the detais for your
+
+146
+00:07:21,290 --> 00:07:24,275
+project name, cost,
+sender and locale.
+
+147
+00:07:24,275 --> 00:07:27,025
+Click to the license option
+and you have now
+
+148
+00:07:27,025 --> 00:07:30,524
+successfully licensed
+an asset from Adobe Stock
+
+149
+00:07:30,524 --> 00:07:37,317
+and we can save the
+asset to AEM assets .
+
